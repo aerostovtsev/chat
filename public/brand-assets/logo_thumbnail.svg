@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
-    <title>woot-log</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="woot-log" fill-rule="nonzero">
-            <circle id="Oval" fill="#47A7F6" cx="256" cy="256" r="256"></circle>
-            <path d="M362.807947,368.807947 L244.122956,368.807947 C178.699407,368.807947 125.456954,315.561812 125.456954,250.12177 C125.456954,184.703089 178.699407,131.456954 244.124143,131.456954 C309.565494,131.456954 362.807947,184.703089 362.807947,250.12177 L362.807947,368.807947 Z" id="Fill-1" stroke="#FFFFFF" stroke-width="6" fill="#FFFFFF"></path>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Logo">
+        <g>
+            <path d="M0,256C0,114.615 114.615,0 256,0C397.385,0 512,114.615 512,256C512,397.385 397.385,512 256,512C114.615,512 0,397.385 0,256Z" style="fill:rgb(138,92,246);fill-rule:nonzero;"/>
+            <g transform="matrix(1,0,0,1,129.214,135.911)">
+                <path d="M23.24,0.813C11.802,0.813 2.531,10.452 2.531,22.353L2.531,259.366L61.594,201.902L230.331,201.902C241.762,201.902 251.04,192.255 251.04,180.361L251.04,22.353C251.04,10.452 241.762,0.813 230.331,0.813L23.24,0.813ZM76.309,92.3C85.236,92.3 92.473,99.59 92.473,108.583C92.473,117.575 85.236,124.865 76.309,124.865C67.383,124.865 60.146,117.575 60.146,108.583C60.146,99.59 67.383,92.3 76.309,92.3ZM185.31,92.605C194.236,92.605 201.473,99.895 201.473,108.888C201.473,117.88 194.236,125.17 185.31,125.17C176.383,125.17 169.147,117.88 169.147,108.888C169.147,99.895 176.383,92.605 185.31,92.605ZM130.793,93.012C139.719,93.012 146.956,100.302 146.956,109.295C146.956,118.288 139.719,125.577 130.793,125.577C121.866,125.577 114.63,118.288 114.63,109.295C114.63,100.302 121.866,93.012 130.793,93.012Z" style="fill:white;fill-rule:nonzero;"/>
+            </g>
         </g>
     </g>
 </svg>

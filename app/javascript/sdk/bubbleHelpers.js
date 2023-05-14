@@ -3,7 +3,7 @@ import { IFrameHelper } from './IFrameHelper';
 import { isExpandedView } from './settingsHelper';
 
 export const bubbleSVG =
-  'M240.808 240.808H122.123C56.6994 240.808 3.45695 187.562 3.45695 122.122C3.45695 56.7031 56.6994 3.45697 122.124 3.45697C187.566 3.45697 240.808 56.7031 240.808 122.122V240.808Z';
+  'M23.24.813c-11.438 0-20.709 9.64-20.709 21.54v237.013l59.063-57.464h168.737c11.431 0 20.709-9.647 20.709-21.541V22.353c0-11.9-9.278-21.54-20.709-21.54H23.241ZM76.31 92.3c8.926 0 16.162 7.29 16.162 16.283 0 8.992-7.236 16.282-16.163 16.282-8.926 0-16.163-7.29-16.163-16.282 0-8.993 7.237-16.283 16.163-16.283Zm109 .305c8.926 0 16.163 7.29 16.163 16.283 0 8.992-7.237 16.282-16.163 16.282-8.927 0-16.163-7.29-16.163-16.282 0-8.993 7.236-16.283 16.163-16.283Zm-54.517.407c8.926 0 16.163 7.29 16.163 16.283 0 8.993-7.237 16.282-16.163 16.282-8.927 0-16.163-7.289-16.163-16.282s7.236-16.283 16.163-16.283Z';
 
 export const body = document.getElementsByTagName('body')[0];
 export const widgetHolder = document.createElement('div');
@@ -29,7 +29,7 @@ export const createBubbleIcon = ({ className, path, target }) => {
   bubbleIcon.setAttributeNS(null, 'id', 'woot-widget-bubble-icon');
   bubbleIcon.setAttributeNS(null, 'width', '24');
   bubbleIcon.setAttributeNS(null, 'height', '24');
-  bubbleIcon.setAttributeNS(null, 'viewBox', '0 0 240 240');
+  bubbleIcon.setAttributeNS(null, 'viewBox', '0 0 260 260');
   bubbleIcon.setAttributeNS(null, 'fill', 'none');
   bubbleIcon.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
 
