@@ -4,7 +4,7 @@ class AgentNotifications::ConversationNotificationsMailer < ApplicationMailer
 
     @agent = agent
     @conversation = conversation
-    subject = "#{@agent.available_name}, A new conversation [ID - #{@conversation.display_id}] has been created in #{@conversation.inbox&.name}."
+    subject = "#{@agent.available_name}, Новый диалог [ID - #{@conversation.display_id}] был создан в #{@conversation.inbox&.name}."
     @action_url = app_account_conversation_url(account_id: @conversation.account_id, id: @conversation.display_id)
     send_mail_with_liquid(to: @agent.email, subject: subject) and return
   end
@@ -14,7 +14,7 @@ class AgentNotifications::ConversationNotificationsMailer < ApplicationMailer
 
     @agent = agent
     @conversation = conversation
-    subject = "#{@agent.available_name}, A new conversation [ID - #{@conversation.display_id}] has been assigned to you."
+    subject = "#{@agent.available_name}, Новый диалог [ID - #{@conversation.display_id}] был назначен вам."
     @action_url = app_account_conversation_url(account_id: @conversation.account_id, id: @conversation.display_id)
     send_mail_with_liquid(to: @agent.email, subject: subject) and return
   end
@@ -25,7 +25,7 @@ class AgentNotifications::ConversationNotificationsMailer < ApplicationMailer
     @agent = agent
     @conversation = conversation
     @message = message
-    subject = "#{@agent.available_name}, You have been mentioned in conversation [ID - #{@conversation.display_id}]"
+    subject = "#{@agent.available_name}, Вас упомянули в беседе [ID - #{@conversation.display_id}]"
     @action_url = app_account_conversation_url(account_id: @conversation.account_id, id: @conversation.display_id)
     send_mail_with_liquid(to: @agent.email, subject: subject) and return
   end
@@ -36,8 +36,8 @@ class AgentNotifications::ConversationNotificationsMailer < ApplicationMailer
     return if ::OnlineStatusTracker.get_presence(message.account_id, 'User', agent.id)
 
     @agent = agent
-    @conversation = conversation
-    subject = "#{@agent.available_name}, New message in your assigned conversation [ID - #{@conversation.display_id}]."
+    @conversation = message.conversation
+    subject = "#{@agent.available_name}, Новое сообщение в назначенном диалоге [ID - #{@conversation.display_id}]."
     @action_url = app_account_conversation_url(account_id: @conversation.account_id, id: @conversation.display_id)
     send_mail_with_liquid(to: @agent.email, subject: subject) and return
   end
@@ -48,8 +48,8 @@ class AgentNotifications::ConversationNotificationsMailer < ApplicationMailer
     return if ::OnlineStatusTracker.get_presence(message.account_id, 'User', agent.id)
 
     @agent = agent
-    @conversation = conversation
-    subject = "#{@agent.available_name}, New message in your participating conversation [ID - #{@conversation.display_id}]."
+    @conversation = message.conversation
+    subject = "#{@agent.available_name}, Новое сообщение в участвующем диалоге [ID - #{@conversation.display_id}]."
     @action_url = app_account_conversation_url(account_id: @conversation.account_id, id: @conversation.display_id)
     send_mail_with_liquid(to: @agent.email, subject: subject) and return
   end

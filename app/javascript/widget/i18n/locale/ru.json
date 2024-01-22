@@ -26,10 +26,10 @@
     "Воскресенье",
     "Понедельник",
     "Вторник",
-    "Среда",
+    "Среду",
     "Четверг",
-    "Пятница",
-    "Суббота"
+    "Пятницу",
+    "Субботу"
   ],
   "START_CONVERSATION": "Начать диалог",
   "END_CONVERSATION": "Завершить диалог",
@@ -40,13 +40,13 @@
   "UNREAD_VIEW": {
     "VIEW_MESSAGES_BUTTON": "Посмотреть новые сообщения",
     "CLOSE_MESSAGES_BUTTON": "Закрыть",
-    "COMPANY_FROM": "от",
+    "COMPANY_FROM": "из",
     "BOT": "Бот"
   },
   "BUBBLE": {
     "LABEL": "Пообщайтесь с нами"
   },
-  "POWERED_BY": "Работает на Chatwoot",
+  "POWERED_BY": "Работает на BITCDP",
   "EMAIL_PLACEHOLDER": "Пожалуйста, введите ваш email",
   "CHAT_PLACEHOLDER": "Введите сообщение",
   "TODAY": "Сегодня",

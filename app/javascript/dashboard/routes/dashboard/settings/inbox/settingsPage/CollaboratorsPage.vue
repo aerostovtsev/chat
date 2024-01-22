@@ -13,7 +13,7 @@
         :close-on-select="false"
         :clear-on-select="false"
         :hide-selected="true"
-        placeholder="Pick some"
+        placeholder="Выбрать несколько"
         selected-label
         :select-label="$t('FORMS.MULTISELECT.ENTER_TO_SELECT')"
         :deselect-label="$t('FORMS.MULTISELECT.ENTER_TO_REMOVE')"
