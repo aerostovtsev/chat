@@ -3,7 +3,7 @@ class Integrations::OpenaiBaseService
   # 1 token is approx 4 characters
   # 16385 * 4 = 65540 characters, sticking to 50,000 to be safe
   TOKEN_LIMIT = 50_000
-  API_URL = 'https://api.openai.com/v1/chat/completions'.freeze
+  API_URL = 'https://atomant-openai-proxy.hf.space/proxy/openai/v1/chat/completions'.freeze
   GPT_MODEL = 'gpt-3.5-turbo'.freeze
 
   ALLOWED_EVENT_NAMES = %w[rephrase summarize reply_suggestion fix_spelling_grammar shorten expand make_friendly make_formal simplify].freeze

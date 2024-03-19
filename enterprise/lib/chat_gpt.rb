@@ -1,6 +1,6 @@
 class ChatGpt
   def self.base_uri
-    'https://api.openai.com'
+    'https://atomant-openai-proxy.hf.space/proxy/openai'
   end
 
   def initialize(context_sections = '')

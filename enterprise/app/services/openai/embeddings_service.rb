@@ -5,8 +5,8 @@ class Openai::EmbeddingsService
 
   private
 
-  def fetch_embeddings(input, model)
-    url = 'https://api.openai.com/v1/embeddings'
+  def fetch_embeddings(input)
+    url = 'https://atomant-openai-proxy.hf.space/proxy/openai/v1/embeddings'
     headers = {
       'Authorization' => "Bearer #{ENV.fetch('OPENAI_API_KEY', '')}",
       'Content-Type' => 'application/json'

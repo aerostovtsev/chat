@@ -9,7 +9,7 @@ RSpec.describe Enterprise::MessageTemplates::ResponseBotService, type: :service 
 
   before do
     skip_unless_response_bot_enabled_test_environment
-    stub_request(:post, 'https://api.openai.com/v1/embeddings').to_return(status: 200, body: {}.to_json,
+    stub_request(:post, 'https://atomant-openai-proxy.hf.space/proxy/openai/v1/embeddings').to_return(status: 200, body: {}.to_json,
                                                                           headers: { Content_Type: 'application/json' })
     create(:message, message_type: :incoming, conversation: conversation, content: 'Hi')
     create(:message, message_type: :outgoing, conversation: conversation, content: 'Hello')

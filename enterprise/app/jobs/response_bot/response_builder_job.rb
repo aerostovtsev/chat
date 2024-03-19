@@ -48,7 +48,7 @@ class ResponseBot::ResponseBuilderJob < ApplicationJob
   def post_request(data)
     headers = prepare_headers
     HTTParty.post(
-      'https://api.openai.com/v1/chat/completions',
+      'https://atomant-openai-proxy.hf.space/proxy/openai/v1/chat/completions',
       headers: headers,
       body: data.to_json
     )
